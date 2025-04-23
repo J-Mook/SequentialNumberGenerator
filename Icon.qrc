@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>content_copy_round-4x.png</file>
+    </qresource>
+</RCC>

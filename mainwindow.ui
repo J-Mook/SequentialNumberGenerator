@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>363</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*    One Dark - https://github.com/atom/one-dark-ui    */
+/*    Author: Lofanmi - https://github.com/Lofanmi      */
+/*    MIT License                                       */
+
+QWidget,
+QToolBar,
+QFileDialog,
+QStackedWidget,
+QTextBrowser,
+QLabel,
+QPushButton,
+QRadioButton,
+QCheckBox,
+QStatusBar,
+QComboBox,
+QTabBar,
+QTabWidget,
+QLineEdit,
+QFrame,
+QSpinBox,
+QTextEdit,
+QListView,
+QWebView,
+QTreeView,
+QHeaderView,
+QDialog {
+  background-color: #282c34;
+  border-color: #464c55;
+  border-radius: 6px;
+  color: #b9b9b9;
+}
+
+QWidget:window {
+  background: #282c34;
+  border-color: #464c55;
+  color: #b9b9b9;
+}
+
+QTabWidget::pane {
+  background: #282c34;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+}
+
+QPushButton {
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  padding: 4px;
+  min-width: 65px;
+  min-height: 12px;
+}
+
+QPushButton:hover {
+  background-color: #282c34;
+}
+
+QPushButton:pressed {
+  background-color: #282c34;
+  color: white;
+}
+
+QPushButton:disabled {
+  color: #282c34;
+}
+
+QComboBox {
+  background-color: #282c34;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  color: #b9b9b9;
+  padding: 1px 2em 1px 3px;
+}
+
+QComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: top right;
+  border-left: 1px solid #464c55;
+}
+
+QComboBox::down-arrow {
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  width: 6px;
+  height: 6px;
+  background: #495162;
+}
+
+QTabBar::tab {
+  background: #282C34;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+  color: #b9b9b9;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+QTabBar::tab:hover {
+  background-color: #282c34;
+  border: 1px solid #464c55;
+  border-bottom: none;
+}
+
+QTabBar::tab:selected {
+  background-color: #22252C;
+  border: 1px solid #464c55;
+  border-bottom: none;
+  color: white;
+}
+
+QToolBar {
+  background-color: #282c34;
+  border: none;
+  padding: 1px;
+}
+
+QToolBar::separator {
+  width: 6px;
+  background-color: #282c34;
+}
+
+QToolButton {
+  border-radius: 6px;
+  margin: 1px;
+}
+
+QToolButton:hover {
+  background-color: #282c34;
+  border: 1px solid #464c55;
+}
+
+QToolButton::menu-button {
+  border-left: 1px solid #282c34;
+  border-radius: 6px;
+  background: #282C34;
+  width: 16px;
+}
+
+QToolButton::menu-button:hover {
+  border-left: 1px solid #464c55;
+  background: #282C34;
+  width: 16px;
+}
+
+QToolButton:checked,
+QToolButton:pressed {
+  background-color: #282c34;
+  color: white;
+}
+
+QMenu {
+  background-color: #282c34;
+  border: 1px solid #404859;
+  border-radius: 6px;
+  color: white;
+  padding: 1px;
+}
+
+QMenu::item {
+  padding: 2px 25px 2px 20px;
+  border: 1px solid #282C34;
+  border-radius: 6px;
+}
+
+QMenu::item:disabled {
+  color: #666666;
+}
+
+QMenu::item:selected {
+  border-color: #404859;
+  background: #282c34;
+}
+
+QMenu::separator {
+  height: 1px;
+  background: #282c34;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+QMenu::indicator {
+  width: 13px;
+  height: 13px;
+}
+
+QMenuBar {
+  background-color: #282c34;
+  color: white;
+}
+
+QMenuBar::item {
+  background: #282C34;
+}
+
+QMenuBar::item:disabled {
+  color: #404859;
+}
+
+QMenuBar::item:selected {
+  background: #282c34;
+}
+
+QMenuBar::item:pressed {
+  background: #464c55;
+}
+
+QLineEdit,
+QListView,
+QTreeView,
+QTableView,
+QAbstractSpinBox {
+  background-color: #282c34;
+  color: #b9b9b9;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+}
+
+QAbstractScrollArea,
+QLineEdit,
+QTextEdit,
+QAbstractSpinBox,
+QComboBox {
+  border: 1px solid #464c55;
+  border-radius: 6px;
+}
+
+QScrollBar:vertical {
+  background-color: #282c34;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  width: 18px;
+  margin: 18px 0 18px 0px;
+}
+
+QScrollBar::handle:vertical {
+  background-color: #464c55;
+  min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+  border: none;
+  height: 18px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+  border: none;
+  height: 18px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+  background: none;
+}
+
+QScrollBar:up-arrow:vertical,
+QScrollBar:down-arrow:vertical {
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #282c34;
+}
+
+QScrollBar:horizontal {
+  background-color: #282c34;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  height: 18px;
+  margin: 0px 18px 0 18px;
+}
+
+QScrollBar::handle:horizontal {
+  background-color: #282c34;
+  min-width: 20px;
+}
+
+QScrollBar::add-line:horizontal {
+  border: none;
+  width: 18px;
+  subcontrol-position: right;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+  border: none;
+  width: 18px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+  background: none;
+}
+
+QScrollBar:left-arrow:horizontal,
+QScrollBar:right-arrow:horizontal {
+  border: 1px solid #464c55;
+  border-radius: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #282c34;
+}
+
+QHeaderView {
+  background: #282c34;
+}
+QHeaderView::section {
+  background: #282c34;
+  border: 0;
+  color: #b9b9b9;
+  padding: 3px 0 3px 4px;
+}
+
+QFrame#infoLabel {
+  border: 1px inset #464c55;
+  border-radius: 6px;
+}
+
+QGroupBox {
+  margin-top: 1ex;
+  border: 1px solid #464c55;
+  border-radius: 6px;
+}
+
+QGroupBox::title {
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  margin-bottom: 6px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="8" column="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Repeat</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_repeat">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>   Generate   </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_Copy">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="Icon.qrc">
+          <normaloff>:/new/prefix1/content_copy_round-4x.png</normaloff>:/new/prefix1/content_copy_round-4x.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>반복시킬 문장 이전에 입력될 구문입니다.</string>
+      </property>
+      <property name="text">
+       <string>Post Sentence</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QTableWidget" name="tableWidget_SeqNum">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QTextEdit" name="textEdit_post_text">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>by Mooks</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>이곳에 반복시킬 문장을 입력하고, 순차적으로 입력시킬 숫자을 아래 표의 인덱스에 맞춰 %n으로 표시하세요.</string>
+        </property>
+        <property name="text">
+         <string>Repeat Sentence (%1, %2, %3...)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_AutoEnter">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>반복할 문장뒤에 자동으로 줄바꿈합니다.</string>
+        </property>
+        <property name="text">
+         <string>Auto \n</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="2">
+     <widget class="QTextEdit" name="textEdit_repeat_text">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>363</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="Icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
