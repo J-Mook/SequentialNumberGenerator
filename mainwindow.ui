@@ -407,7 +407,6 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>AppleSDGothicNeoR00</family>
-        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="text">
@@ -424,7 +423,6 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>AppleSDGothicNeoSB00</family>
-        <pointsize>10</pointsize>
         <bold>true</bold>
        </font>
       </property>
@@ -441,7 +439,6 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>AppleSDGothicNeoR00</family>
-        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="contextMenuPolicy">
@@ -465,7 +462,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <family>AppleSDGothicNeoSB00</family>
-          <pointsize>10</pointsize>
           <bold>true</bold>
          </font>
         </property>
@@ -482,7 +478,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <family>AppleSDGothicNeoR00</family>
-          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="toolTip">
@@ -500,7 +495,6 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>AppleSDGothicNeoR00</family>
-        <pointsize>10</pointsize>
        </font>
       </property>
      </widget>
@@ -510,7 +504,6 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>AppleSDGothicNeoR00</family>
-        <pointsize>10</pointsize>
        </font>
       </property>
      </widget>
@@ -522,7 +515,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <family>AppleSDGothicNeoSB00</family>
-          <pointsize>10</pointsize>
           <bold>true</bold>
          </font>
         </property>
@@ -549,7 +541,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <family>AppleSDGothicNeoSB00</family>
-          <pointsize>10</pointsize>
           <bold>true</bold>
          </font>
         </property>
@@ -569,7 +560,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <family>AppleSDGothicNeoR00</family>
-          <pointsize>10</pointsize>
          </font>
         </property>
        </widget>
@@ -579,7 +569,6 @@ QGroupBox::title {
         <property name="font">
          <font>
           <family>AppleSDGothicNeoR00</family>
-          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="styleSheet">
