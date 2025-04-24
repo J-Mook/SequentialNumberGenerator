@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>363</width>
+    <width>390</width>
     <height>600</height>
    </rect>
   </property>
@@ -232,6 +232,7 @@ QLineEdit,
 QListView,
 QTreeView,
 QTableView,
+QTableCornerButton::section,
 QAbstractSpinBox {
   background-color: #282c34;
   color: #b9b9b9;
@@ -444,7 +445,7 @@ QGroupBox::title {
        </font>
       </property>
       <property name="contextMenuPolicy">
-       <enum>Qt::CustomContextMenu</enum>
+       <enum>Qt::ContextMenuPolicy::CustomContextMenu</enum>
       </property>
      </widget>
     </item>
@@ -469,7 +470,7 @@ QGroupBox::title {
        <string>by Mooks</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
       </property>
      </widget>
     </item>
@@ -527,8 +528,8 @@ QGroupBox::title {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>363</width>
-     <height>21</height>
+     <width>390</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

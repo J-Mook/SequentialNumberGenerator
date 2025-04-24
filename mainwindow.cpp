@@ -91,8 +91,8 @@ QVector<SeqData> MainWindow::getSeqNumList(){
 
 QString MainWindow::trimDoubletoString(double val){
     QString res = QString::number(val, 'f', 10);
-    res = res.remove(QRegExp("0+$"));
-    res = res.remove(QRegExp("\\.$"));
+    res = res.remove(QRegularExpression("0+$"));
+    res = res.remove(QRegularExpression("\\.$"));
     return res;
 }
 

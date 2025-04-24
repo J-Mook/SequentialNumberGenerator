@@ -6,7 +6,7 @@
 #include <QTextStream>
 #include <QVector>
 #include <QString>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QClipboard>
 
 QT_BEGIN_NAMESPACE
