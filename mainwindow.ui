@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>390</width>
-    <height>600</height>
+    <width>396</width>
+    <height>657</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,13 +43,13 @@ QDialog {
   background-color: #282c34;
   border-color: #464c55;
   border-radius: 6px;
-  color: #b9b9b9;
+  color: #d9d9d9;
 }
 
 QWidget:window {
   background: #282c34;
   border-color: #464c55;
-  color: #b9b9b9;
+  color: #d9d9d9;
 }
 
 QTabWidget::pane {
@@ -83,7 +83,7 @@ QComboBox {
   background-color: #282c34;
   border: 1px solid #464c55;
   border-radius: 6px;
-  color: #b9b9b9;
+  color: #d9d9d9;
   padding: 1px 2em 1px 3px;
 }
 
@@ -110,7 +110,7 @@ QTabBar::tab {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom: none;
-  color: #b9b9b9;
+  color: #d9d9d9;
   padding-left: 5px;
   padding-right: 10px;
   padding-top: 3px;
@@ -235,7 +235,7 @@ QTableView,
 QTableCornerButton::section,
 QAbstractSpinBox {
   background-color: #282c34;
-  color: #b9b9b9;
+  color: #d9d9d9;
   border: 1px solid #464c55;
   border-radius: 6px;
 }
@@ -337,7 +337,7 @@ QHeaderView {
 QHeaderView::section {
   background: #282c34;
   border: 0;
-  color: #b9b9b9;
+  color: #d9d9d9;
   padding: 3px 0 3px 4px;
 }
 
@@ -360,13 +360,195 @@ QGroupBox::title {
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="8" column="2">
-     <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QGridLayout" name="gridLayout" rowminimumheight="0,0,0,0,0,0,0,0,0,30,0">
+    <item row="10" column="2">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoR00</family>
+        <pointsize>8</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>by Mooks</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>75</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoR00</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> Generate &amp;&amp; Copy </string>
+      </property>
+      <property name="icon">
+       <iconset resource="Icon.qrc">
+        <normaloff>:/new/prefix1/content_copy_round-4x.png</normaloff>:/new/prefix1/content_copy_round-4x.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoSB00</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>반복시킬 문장 이전에 입력될 구문입니다.</string>
+      </property>
+      <property name="text">
+       <string>Post Sentence</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QTableWidget" name="tableWidget_SeqNum">
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoR00</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>AppleSDGothicNeoSB00</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>이곳에 반복시킬 문장을 입력하고, 순차적으로 입력시킬 숫자을 아래 표의 인덱스에 맞춰 %n으로 표시하세요.</string>
+        </property>
+        <property name="text">
+         <string>Repeat Sentence (%1, %2, %3...)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_AutoEnter">
+        <property name="font">
+         <font>
+          <family>AppleSDGothicNeoR00</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>반복할 문장뒤에 자동으로 줄바꿈합니다.</string>
+        </property>
+        <property name="text">
+         <string>Auto \n</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="2">
+     <widget class="QTextEdit" name="textEdit_repeat_text">
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoR00</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QTextEdit" name="textEdit_post_text">
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoR00</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,2,0">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <family>AppleSDGothicNeoSB00</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Variable Table</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item>
        <widget class="QLabel" name="label">
         <property name="font">
          <font>
+          <family>AppleSDGothicNeoSB00</family>
           <pointsize>10</pointsize>
           <bold>true</bold>
          </font>
@@ -378,22 +560,17 @@ QGroupBox::title {
       </item>
       <item>
        <widget class="QLineEdit" name="lineEdit_repeat">
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="font">
          <font>
+          <family>AppleSDGothicNeoR00</family>
           <pointsize>10</pointsize>
          </font>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>   Generate   </string>
         </property>
        </widget>
       </item>
@@ -401,6 +578,7 @@ QGroupBox::title {
        <widget class="QToolButton" name="toolButton_Copy">
         <property name="font">
          <font>
+          <family>AppleSDGothicNeoR00</family>
           <pointsize>10</pointsize>
          </font>
         </property>
@@ -421,106 +599,6 @@ QGroupBox::title {
       </item>
      </layout>
     </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="toolTip">
-       <string>반복시킬 문장 이전에 입력될 구문입니다.</string>
-      </property>
-      <property name="text">
-       <string>Post Sentence</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="2">
-     <widget class="QTableWidget" name="tableWidget_SeqNum">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="contextMenuPolicy">
-       <enum>Qt::ContextMenuPolicy::CustomContextMenu</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QTextEdit" name="textEdit_post_text">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="2">
-     <widget class="QLabel" name="label_4">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>by Mooks</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
-      <property name="rightMargin">
-       <number>10</number>
-      </property>
-      <item>
-       <widget class="QLabel" name="label_3">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>이곳에 반복시킬 문장을 입력하고, 순차적으로 입력시킬 숫자을 아래 표의 인덱스에 맞춰 %n으로 표시하세요.</string>
-        </property>
-        <property name="text">
-         <string>Repeat Sentence (%1, %2, %3...)</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="checkBox_AutoEnter">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="toolTip">
-         <string>반복할 문장뒤에 자동으로 줄바꿈합니다.</string>
-        </property>
-        <property name="text">
-         <string>Auto \n</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item row="4" column="2">
-     <widget class="QTextEdit" name="textEdit_repeat_text">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -528,12 +606,11 @@ QGroupBox::title {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>390</width>
+     <width>396</width>
      <height>25</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
   <include location="Icon.qrc"/>

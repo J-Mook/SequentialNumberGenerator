@@ -1,5 +1,14 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>content_copy_round-4x.png</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoB.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoEB.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoH.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoL.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoM.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoR.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoSB.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoT.ttf</file>
+        <file>AppleSDGothicNeo/AppleSDGothicNeoUL.ttf</file>
     </qresource>
 </RCC>

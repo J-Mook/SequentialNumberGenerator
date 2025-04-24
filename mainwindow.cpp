@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     resizeEvent();
     LoadData();
 
-    ui->pushButton->hide();
+    ui->toolButton_Copy->hide();
 }
 
 MainWindow::~MainWindow()
@@ -28,13 +28,15 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QFile file(QCoreApplication::applicationDirPath() + "\\Output.txt");
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    clipboard->setText(CreateString());
 
-    if(file.open(QIODevice::WriteOnly | QIODevice::Text)){
-        QTextStream out(&file);
-        out << CreateString();
-        file.close();
-    }
+    // QFile file(QCoreApplication::applicationDirPath() + "\\Output.txt");
+    // if(file.open(QIODevice::WriteOnly | QIODevice::Text)){
+    //     QTextStream out(&file);
+    //     out << CreateString();
+    //     file.close();
+    // }
 }
 
 QString MainWindow::CreateString(){
@@ -91,8 +93,8 @@ QVector<SeqData> MainWindow::getSeqNumList(){
 
 QString MainWindow::trimDoubletoString(double val){
     QString res = QString::number(val, 'f', 10);
-    res = res.remove(QRegularExpression("0+$"));
-    res = res.remove(QRegularExpression("\\.$"));
+    res = res.remove(QRegExp("0+$"));
+    res = res.remove(QRegExp("\\.$"));
     return res;
 }
 
